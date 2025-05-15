@@ -5,7 +5,8 @@ var Buttons = document.querySelectorAll('span');
 znaki = ['-','+','*','/']
 scobki = ['(',')']
 zzifry = ['1','2','3','4','5','6','7','8','9','0',]
-open_flag=0
+open_flag=0;
+tochka_flag=1;
 for (i = 0; i < Buttons.length; i++){
 	Buttons[i].addEventListener('click', function(){
 		if (this.innerHTML == '=' && Value.innerHTML != ''){
