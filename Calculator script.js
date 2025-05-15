@@ -19,7 +19,7 @@ for (i = 0; i < Buttons.length; i++){
 			Value.innerHTML = '';
 		}
 		else if(this.innerHTML=='b'){
-    if(scobki.includes (Value.innerHTML.slice(0, -1))){
+    if(scobki.includes(Value.innerHTML.charAt(Value.innerHTML.length - 1))){
       open_flag=(open_flag == 1)? 0 : 1;
 }
 			Value.innerHTML = Value.innerHTML.slice(0, -1);
