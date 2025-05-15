@@ -21,7 +21,7 @@ for (i = 0; i < Buttons.length; i++){
 		}
 		else if(this.innerHTML=='b'){
     if(scobki.includes(Value.innerHTML.charAt(Value.innerHTML.length - 1))){
-      open_flag=(open_flag == 1)? 0 : 1;
+      open_flag=(open_flag == 1) ? 0 : 1;
 }
 			Value.innerHTML = Value.innerHTML.slice(0, -1);
    
