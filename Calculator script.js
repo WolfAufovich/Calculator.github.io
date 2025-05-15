@@ -19,7 +19,11 @@ for (i = 0; i < Buttons.length; i++){
 			Value.innerHTML = '';
 		}
 		else if(this.innerHTML=='b'){
+    if(scobki.includes (Value.innerHTML.slice(0, -1))){
+      open_flag=(open_flag == 1)? 0 : 1;
+}
 			Value.innerHTML = Value.innerHTML.slice(0, -1);
+   
 		}
 		else if ((Value.innerHTML == '' || znaki.includes(Value.innerHTML[Value.innerHTML.length - 1]) || Value.innerHTML[Value.innerHTML.length - 1]=='(') && (this.innerHTML == '/' || this.innerHTML == '*' || this.innerHTML == '+' || this.innerHTML == '-' || this.innerHTML == '.')){
 			Value.innerHTML +='';
