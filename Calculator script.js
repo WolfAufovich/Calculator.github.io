@@ -11,7 +11,7 @@ for (i = 0; i < Buttons.length; i++){
 	Buttons[i].addEventListener('click', function(){
 		if (this.innerHTML == '=' && Value.innerHTML != ''){
 			if(Value.innerHTML.includes('/0')){
-				Value.innerHTML = 'ti sho udumal chert?';
+				Value.innerHTML = 'ti sho udumal?';
 			} else{
 				Value.innerHTML = eval(Value.innerHTML);
 			}
