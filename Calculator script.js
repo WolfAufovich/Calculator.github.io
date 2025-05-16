@@ -22,12 +22,12 @@ for (i = 0; i < Buttons.length; i++){
 			tochka_flag=1;
 		}
 		else if(this.innerHTML=='b'){
-   		if(scobki.includes(Value.innerHTML.charAt(Value.innerHTML.length - 1))){
-      			open_flag=(open_flag == 1) ? 0 : 1;
-		}
-			//Value.innerHTML = Value.innerHTML.slice(0, -1);
+   			if(scobki.includes(Value.innerHTML.charAt(Value.innerHTML.length - 1))){
+      				open_flag=(open_flag == 1) ? 0 : 1;
+			}
+			Value.innerHTML = Value.innerHTML.slice(0, -1);
    
-		//
+		}
 		else if(this.innerHTML == '.' && tochka_flag==1 && zzifry.includes(Value.innerHTML[Value.innerHTML.length - 1])){
 			Value.innerHTML += this.innerHTML;
 			tochka_flag=0;
