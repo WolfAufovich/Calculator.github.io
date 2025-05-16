@@ -27,7 +27,7 @@ for (i = 0; i < Buttons.length; i++){
 }
 			//Value.innerHTML = Value.innerHTML.slice(0, -1);
    
-		//}
+		}
 		else if(this.innerHTML == '.' && tochka_flag==1 && zzifry.includes(Value.innerHTML[Value.innerHTML.length - 1])){ // точка
 			Value.innerHTML += this.innerHTML;
 			tochka_flag=0;
