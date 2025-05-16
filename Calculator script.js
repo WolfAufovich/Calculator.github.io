@@ -6,7 +6,7 @@ znaki = ['-','+','*','/']
 scobki = ['(',')']
 zzifry = ['1','2','3','4','5','6','7','8','9','0']
 open_flag=0;
-tochka_flag=1;
+tochka_flag=1
 for (i = 0; i < Buttons.length; i++){
 	Buttons[i].addEventListener('click', function(){
 		if (this.innerHTML == '=' && Value.innerHTML != ''){
@@ -28,10 +28,10 @@ for (i = 0; i < Buttons.length; i++){
 			//Value.innerHTML = Value.innerHTML.slice(0, -1);
    
 		//
-		else if(this.innerHTML == '.' && tochka_flag==1 && zzifry.includes(Value.innerHTML[Value.innerHTML.length - 1])){ // точка
+		else if(this.innerHTML == '.' && tochka_flag==1 && zzifry.includes(Value.innerHTML[Value.innerHTML.length - 1])){
 			Value.innerHTML += this.innerHTML;
 			tochka_flag=0;
-		} 						
+		}
 		else if ((Value.innerHTML == '' || znaki.includes(Value.innerHTML[Value.innerHTML.length - 1]) || Value.innerHTML[Value.innerHTML.length - 1]=='(') && (this.innerHTML == '/' || this.innerHTML == '*' || this.innerHTML == '+' || this.innerHTML == '-' || (this.innerHTML == '.' && tochka_flag==0))){
 			Value.innerHTML +='';
 		}
