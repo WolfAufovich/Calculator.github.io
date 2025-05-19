@@ -32,6 +32,9 @@ for (i = 0; i < Buttons.length; i++){
 			Value.innerHTML += this.innerHTML;
 			tochka_flag=0;
 		}
+  else if(this.innerHTML == '*' && Value.innerHTML[Value.innerHTML.length - 1]=='*' && Value.innerHTML[Value.innerHTML.length - 2]!='*'){
+    Value.innerHTML += this.innerHTML;
+}
 		else if ((Value.innerHTML == '' || znaki.includes(Value.innerHTML[Value.innerHTML.length - 1]) || Value.innerHTML[Value.innerHTML.length - 1]=='(') && (this.innerHTML == '/' || this.innerHTML == '*' || this.innerHTML == '+' || this.innerHTML == '-' || (this.innerHTML == '.' && tochka_flag==0))){
 			Value.innerHTML +='';
 		}
